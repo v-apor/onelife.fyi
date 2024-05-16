@@ -1,37 +1,69 @@
-* {
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Set body font and background */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: lightgrey;
     color: #333;
-    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: grey;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main section styles */
+main {
     padding: 20px;
 }
 
-header {
-    background-color: grey;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
+section {
     margin-bottom: 20px;
 }
 
-main {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 p {
-    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Copyright text */
+footer p {
+    font-size: 14px;
+    color: #666;
 }
