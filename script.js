@@ -1,10 +1,14 @@
-function changeDescColor() {
-    const description = document.getElementById('description');
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    description.style.color = '#' + randomColor;
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('toggle-button');
+    const additionalInfo = document.getElementById('additional-info');
 
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
-    document.getElementById('changeColorButton').addEventListener('click', changeDescColor);
+    button.addEventListener('click', function() {
+        if (additionalInfo.style.display === 'none') {
+            additionalInfo.style.display = 'block';
+            button.textContent = 'Hide Additional Info';
+        } else {
+            additionalInfo.style.display = 'none';
+            button.textContent = 'Show Additional Info';
+        }
+    });
 });
