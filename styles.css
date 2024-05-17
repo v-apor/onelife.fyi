@@ -451,3 +451,39 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+/* Education section */
+.education {
+    margin-top: 50px;
+}
+
+.education__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.education__item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education__item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.education__details {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.education__summary {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.education__dates {
+    font-size: 14px;
+}
