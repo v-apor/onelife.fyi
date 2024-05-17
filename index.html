@@ -1,36 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OneLife.fyi - Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Apoorv Chandrakar</title>
 </head>
-<body>
-<header>
-  <h1>It's One Life, FYI!</h1>
+<body class="light" id="top">
+<header class="header center">
+  <h3>
+    <a href="https://onelife.fyi" class="link">AC.</a>
+  </h3>
+
+  <nav class="nav center">
+    <ul class="nav__list center">
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#projects">Projects</a>
+      </li>
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#skills">Skills</a>
+      </li>
+      <li class="nav__list-item">
+        <a class="link link--nav" href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+      <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+    </button>
+
+    <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+      <i aria-hidden="true" class="fas fa-bars"></i>
+    </button>
+  </nav>
 </header>
+
 <main>
-  <section>
-    <h2>About Me</h2>
-    <p>Hey there! I'm Apoorv, a passionate explorer on a journey through the maze of life. Whether it's tinkering with code, delving into the depths of a good book, or savoring the flavors of exotic cuisines, I'm always seeking new experiences and challenges.</p>
-    <p>With a curious mind and an adventurous spirit, I thrive on embracing the unknown and pushing the boundaries of what's possible. Join me as I navigate through the twists and turns of this exhilarating ride we call life!</p>
-    <p id="additional-info" style="display: none;">Yes, I used LLM to generate this text!</p>
-    <button id="toggle-button">Show Additional Info</button>
+  <!-- About -->
+  <div class="about center">
+    <h1>Hi, I am <span class="about__name">Apoorv Chandrakar</span></h1>
+    <h1>And this is<span class="about__name"> One Life</span>, FYI!</h1>
+    <h2 class="about__role">A Graduate Scholar</h2>
+    <p class="about__desc">
+      Passionate about data science, machine learning, and artificial intelligence. I specialize in building predictive models and developing efficient algorithms to solve complex problems. My expertise includes Python, machine learning frameworks, and database management.
+    </p>
+
+    <div class="about__contact center">
+      <a href="./resume_apoorv.pdf" target=”_blank”>
+        <span class="btn btn--outline">Resume</span>
+      </a>
+
+      <a href="https://github.com/v-apor" aria-label="github" class="link link--icon">
+        <i aria-hidden="true" class="fab fa-github"></i>
+      </a>
+
+      <a href="https://linkedin.com/in/Apoorv-Chandrakar" aria-label="linkedin" class="link link--icon">
+        <i aria-hidden="true" class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2 class="section__title">Projects</h2>
+
+    <div class="projects__grid">
+      <div class="project">
+        <h3>Extended SQL</h3>
+        <p class="project__description">
+          Developed a custom extension of SQL engine aimed at enhancing the performance of OLAP (Online Analytical Processing) queries. Achieved a significant reduction in query execution time by 20% through the implementation of an efficient single-pass algorithm for computing aggregates. Additionally, designed and implemented a query parsing and arithmetic operations module, enabling SQL-like querying within the project environment.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">SQL</li>
+          <li class="project__stack-item">Python</li>
+          <li class="project__stack-item">Database Optimization</li>
+        </ul>
+        <a href="https://github.com/v-apor/Extended-SQL" aria-label="source code" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>Project Homie</h3>
+        <p class="project__description">
+          Led the ideation and system design of Homie, a web application centered around roommate matching utilizing a sophisticated recommender system. Recognized for achieving exceptional results, including a best-in-class score of 103/100 in CS546. Key contributions include the development of a unique recommendation engine, REST APIs, and other essential functions crucial for seamless roommate matching.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">Recommendation Systems</li>
+          <li class="project__stack-item">REST APIs</li>
+          <li class="project__stack-item">Web Development</li>
+        </ul>
+        <a href="https://github.com/v-apor/Homie" aria-label="source code" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>University Admit Predictor</h3>
+        <p class="project__description">
+          Engineered a sophisticated predictive analytics model leveraging ensemble learning techniques to forecast university admissions without relying on external essay inputs. The model achieved remarkable accuracy of approximately 72% in cross-validation tests, showcasing its effectiveness in predicting admissions outcomes. Notable contributions include the implementation of Gradient Boosting Machine (GBM) and advanced tuning strategies to optimize predictive performance.
+        </p>
+        <ul class="project__stack">
+          <li class="project__stack-item">Machine Learning</li>
+          <li class="project__stack-item">Predictive Analytics</li>
+          <li class="project__stack-item">GBM</li>
+        </ul>
+        <a href="https://github.com/v-apor/CS513-Project" aria-label="source code" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
   </section>
-  <section>
-    <a href="career.html" class="career-link">Check my profile</a>
+
+  <!-- Skills -->
+  <section class="section skills" id="skills">
+    <h2 class="section__title">Skills</h2>
+    <ul class="skills__list">
+      <li class="skills__list-item btn btn--plain">Python</li>
+      <li class="skills__list-item btn btn--plain">SQL</li>
+      <li class="skills__list-item btn btn--plain">Machine Learning</li>
+      <li class="skills__list-item btn btn--plain">Deep Learning</li>
+      <li class="skills__list-item btn btn--plain">PyTorch</li>
+      <li class="skills__list-item btn btn--plain">TensorFlow</li>
+      <li class="skills__list-item btn btn--plain">NLP</li>
+      <li class="skills__list-item btn btn--plain">JavaScript</li>
+      <li class="skills__list-item btn btn--plain">Java</li>
+      <li class="skills__list-item btn btn--plain">HTML</li>
+      <li class="skills__list-item btn btn--plain">CUDA</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact center" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <a href="mailto:apoorv.career@gmail.com">
+      <span class="btn btn--outline">Email me</span>
+    </a>
   </section>
 </main>
-<footer>
-  <div class="social-links">
-    <a href="https://www.github.com/v-apor/" target="_blank"><img src="images/github-mark.png" alt="GitHub"></a>
-    <a href="https://www.linkedin.com/in/apoorv-chandrakar/" target="_blank"><img src="images/In-Blue-128.png" alt="LinkedIn"></a>
-    <a href="https://www.instagram.com/onelifefyi/" target="_blank"><img src="images/Instagram_Glyph_Gradient.png" alt="Instagram"></a>
-    <a href="https://www.youtube.com/@onelifefyi/" target="_blank"><img src="images/Youtube_logo.png" alt="YouTube"></a>
-  </div>
-  <p>&copy; 2024 onelife.fyi</p>
+
+<footer class="footer">
+  <a href="https://github.com/v-apor" class="link footer__link">
+    Created By Apoorv Chandrakar
+  </a>
 </footer>
-<script src="script.js"></script>
+
+<div class="scroll-container">
+  <div class="scroll-top">
+    <a aria-label="Scroll up" href="#top">
+      <i aria-hidden="true" class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+</div>
+
+<script src="./script.js"></script>
 </body>
 </html>
